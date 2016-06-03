@@ -417,6 +417,12 @@ hook(YTIPlayabilityStatus)
 - (_Bool)isPlayableInBackground {
     return YES;
 }
+- (_Bool)hasBackgroundability { // new background check
+    return YES;
+}
+- (_Bool)hasOfflineability { // offline videos
+    return YES;
+}
 endhook
 
 hook(MLAVPlayer)
